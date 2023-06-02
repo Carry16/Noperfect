@@ -1,0 +1,58 @@
+<!-- Author : Rifki Al Azhari -->
+<!-- 2023/05/31 21:24 -->
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Kalkulaktor</title>
+		</head>
+		<body>
+			<script>
+				let ulang = true;
+				
+				
+				// Perjumlahan
+				function tambah(a, b) {
+					return a + b;
+				}
+				
+				
+				// Pengurangan
+				function kurang(a, b) {
+					return a - b;
+				}
+				
+				
+				// Perkalian
+				function kali(a, b) {
+					return a * b;
+				}
+				
+				
+				// Pembagian
+				function bagi(a, b) {
+					return a / b;
+				}
+				
+				while(ulang) {
+					const angka1 = parseFloat(prompt('Masukan angka pertama:'));
+					const angka2 = parseFloat(prompt('Masukan angka kedua:'));
+					
+					let hasilTambah = tambah(angka1, angka2);
+					alert('Hasil Perjumlahan: ' + hasilTambah);
+					
+					let hasilKurang = kurang(angka1, angka2);
+					alert('Hasil Pengurangan:' + hasilKurang);
+					
+					let hasilKali = kali(angka1, angka2);
+					alert('Hasil Perkalian: ' + hasilKali);
+					
+					let hasilBagi = bagi(angka1, angka2);
+					alert('Hasil Pembagian: ' + hasilBagi);
+					
+					ulang = confirm('Mau coba lagi??');
+				}
+				
+				alert('Terima Kasih');
+			</script>
+		</body>
+	</html>
